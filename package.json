@@ -10,7 +10,11 @@
   },
   "nyc": {
     "reporter": ["text", "html"],
-    "exclude": ["tests/**"]
+    "exclude": ["tests/**"],
+    "functions" : 80,
+    "lines": 80,
+    "check-coverage":true
+    
   },
   "repository": {
     "type": "git",
