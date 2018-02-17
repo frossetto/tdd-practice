@@ -1,12 +1,10 @@
-var expect = require('chai').expect;
-describe('Main', function(){
-  var mochaObject;
-  before(function(){
-    mochaObject = require('mocha');
-  })
-  context('Method Check Mocha and Chai',function(){
+import { expect } from 'chai';
+import * as mocha from 'mocha';
+
+describe('Main', () => {
+  context('Method Check Mocha and Chai',() => {
     it('shoud prove mocha and chai is installed and running', function(){
-      expect(mochaObject).to.not.be.an('undefined');
+      expect(mocha).to.not.be.an('undefined');
     })
   })
 })
